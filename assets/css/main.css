@@ -332,3 +332,9 @@
     border: none !important;
     text-decoration: none !important;
 }
+
+/* copyright */
+.copyright {
+    font-size: 12px; /* You can adjust this value to make it smaller or larger */
+    opacity: 0.7; /* Makes it slightly more subtle */
+}
