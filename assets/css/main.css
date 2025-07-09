@@ -260,3 +260,75 @@
 	   font-size: 1.3rem;
 	 }
    }
+
+   /* ==========================================================================
+	  Social links
+	  ========================================================================== */
+
+
+	  .social-links {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		gap: 25px;
+	}
+	
+	.social-links li {
+		display: inline-block;
+	}
+	
+	.social-links i {
+		font-size: 30px; /* Adjust size here */
+	}
+	
+	.fa-orcid {
+		color: #A6CE39;
+	}
+	
+	.fa-github {
+		color: #333;
+	}
+	
+	.fa-envelope {
+		color: #D44638;
+	}
+
+/* Remove all list styling */
+.social-links-container a,
+.social-links a,
+.social-links li,
+.social-links-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Target and remove any pseudo-elements that might be adding dots */
+.social-links-container a::before,
+.social-links a::before,
+.social-links li::before,
+.social-links-container li::before,
+.social-icon::before,
+.social-links-container::before {
+    display: none !important;
+    content: none !important;
+}
+
+/* Target and remove any pseudo-elements that might be adding dotted lines */
+.social-links-container a::after,
+.social-links a::after,
+.social-links li::after,
+.social-links-container li::after,
+.social-icon::after,
+.social-links-container::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Make sure no borders are added */
+.social-links-container a,
+.social-links a,
+.social-icon {
+    border: none !important;
+    text-decoration: none !important;
+}
