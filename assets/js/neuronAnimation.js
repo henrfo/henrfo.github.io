@@ -17,7 +17,7 @@ resize();
 window.addEventListener("resize", resize);
 
 let points = [];
-const totalPoints = 140;
+const totalPoints = 175;
 for (let i = 0; i < totalPoints; i++) {
   points.push({
     x: Math.random() * width,

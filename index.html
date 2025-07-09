@@ -3,63 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henry Moe - Cognitive Psychology & Neuroscience</title>
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <title>Henry Moe - Cognitive Neuroscience</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="is-preload">
-    <header id="header">
-        <div class="inner">
-            <img src="images/henrik.jpg" alt="HM" class="profile-image" />
+<body>
+    <!-- Left Panel -->
+    <div class="left-panel">
+        <!-- Canvas container for animation -->
+        <div class="animation-container">
+            <canvas id="bg"></canvas>
+        </div>
+        
+        <!-- Content -->
+        <div class="left-content">
+            <img src="images/henrik.jpg" alt="Henry Moe" class="profile-image">
             <h1>Henry Moe</h1>
-            <p>
-            Cognitive Neuroscience Student Researcher
+            <p>Cognitive Neuroscience Student</p>
+            <p>Researcher</p>
         </div>
-    </header>
+        
+        <div class="copyright">© HM</div>
+    </div>
 
-    <main id="main">
-        <!-- About Section -->
-        <section id="about" class="inner">
-            <h2>About Me</h2>
-            <p>
-                I'm a psychology and computer science student at the University of Oslo, interested in the intersection of cognitive neuroscience, neuroimaging, machine learning, and data science. I’m particularly interested in vision, perception, memory, and decision-making, and overall predictive modeling, using statistical and computational methods to study brain dynamics.
-    </p>
-            </p>
-        </section>
+    <!-- Right Panel -->
+    <div class="right-panel">
+        <h2>About Me</h2>
+        <p>I'm a psychology and computer science student at the University of Oslo, interested in the intersection of cognitive neuroscience, neuroimaging, machine learning, and data science. I'm particularly interested in vision, perception, memory, and decision-making, and overall predictive modeling, using statistical and computational methods to study brain dynamics.</p>
 
-        <!-- Contact Section -->
-        <section id="contact" class="inner">
-            <h2> Communication </h2>
-            <p>
-                Feel free to reach out for collaborations or discussions!
-            </p>
-            <ul class="contact">
-                <li><strong>Location:</strong> Oslo, Norway</li>
-                <li><strong>Email:</strong> <a href="mailto:henrfo@uio.no">henrfo@uio.no</a></li>
-            </ul>
-
-            <!-- Social Links -->
-            <ul class="social">
-	<li><a href="https://orcid.org/0009-0000-0909-5139" class="icon brands fa-orcid"><span>ORCID</span></a></li>
-                <li><a href="https://github.com/henrfo" class="icon brands fa-github"><span>GitHub</span></a></li>
-                <li><a href="mailto:henrfo@uio.no" class="icon solid fa-envelope"><span>Email</span></a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <div class="inner">
-            <p>© HM</p>
-        </div>
-    </footer>
+        <h2>Communication</h2>
+        <p>Feel free to reach out for collaborations or discussions!</p>
+        
+        <ul>
+            <li>Location: Oslo, Norway</li>
+            <li>Email: <a href="mailto:henrfo@uio.no">henrfo@uio.no</a></li>
+        </ul>
+        
+        <ul>
+            <li><a href="#" class="icon">ORCID</a></li>
+            <li><a href="#" class="icon">GitHub</a></li>
+            <li><a href="#" class="icon">Email</a></li>
+        </ul>
+    </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/neuronAnimation.js"></script>
 </body>
 </html>
