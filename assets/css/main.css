@@ -232,8 +232,10 @@
 	 .left-panel {
 	   width: 100%;
 	   height: auto;
+	   min-height: 100vh;
 	   position: relative;
 	   padding: 3rem 1rem;
+	   justify-content: flex-start;
 	 }
 	 
 	 .right-panel {
