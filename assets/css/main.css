@@ -245,6 +245,11 @@
 	 .animation-container {
 	   height: 100%;
 	 }
+
+	 /* Slightly reduce social icons for tablets */
+	 .social-links i {
+	   font-size: 22px;
+	 }
    }
    
    @media (max-width: 600px) {
@@ -258,6 +263,53 @@
 	 
 	 h2 {
 	   font-size: 1.3rem;
+	 }
+
+	 .left-panel {
+	   padding: 2.5rem 1rem;
+	 }
+
+	 /* Reduce social icon size for phones */
+	 .social-links {
+	   gap: 15px;
+	 }
+
+	 .social-links i {
+	   font-size: 20px;
+	 }
+   }
+
+   /* Extra small devices (small phones) */
+   @media (max-width: 400px) {
+	 .right-panel {
+	   padding: 1.5rem 1rem;
+	 }
+
+	 .left-panel {
+	   padding: 2rem 1rem;
+	 }
+
+	 h1 {
+	   font-size: 1.5rem;
+	 }
+
+	 h2 {
+	   font-size: 1.1rem;
+	 }
+
+	 /* Further reduce social icons for small phones */
+	 .social-links {
+	   gap: 12px;
+	 }
+
+	 .social-links i {
+	   font-size: 18px;
+	 }
+
+	 /* Scale down profile image */
+	 .profile-image {
+	   width: 120px;
+	   height: 120px;
 	 }
    }
 
