@@ -35,9 +35,9 @@
 	 height: 100vh;
 	 position: fixed;
 	 background:
-	   radial-gradient(ellipse at 100% 0%,   #020408 0%, transparent 55%),
-	   radial-gradient(ellipse at 0%   100%, #020408 0%, transparent 55%),
-	   #0a1520;
+	   radial-gradient(ellipse at 15% 85%, rgba(6, 18, 55, 0.45) 0%, transparent 50%),
+	   radial-gradient(ellipse at 85% 15%, rgba(6, 18, 55, 0.60) 0%, transparent 55%),
+	   #030305;
 	 color: white;
 	 text-align: center;
 	 display: flex;
@@ -68,12 +68,14 @@
   }
    
    /* Canvas for the animation */
-   #neuronCanvas {
+   #neuronCanvas,
+   #bg {
 	 position: absolute;
 	 top: 0;
 	 left: 0;
 	 width: 100%;
 	 height: 100%;
+	 opacity: 0.55;
    }
    
    /* Content in the left panel should be above the canvas */

@@ -119,30 +119,10 @@ function drawNeuronEffect() {
   }
 }
 
-function drawVignette() {
-  const panelW = width * 0.35;
-  const r = panelW * 1.1;
-
-  // top-right corner
-  const g1 = ctx.createRadialGradient(panelW, 0, 0, panelW, 0, r);
-  g1.addColorStop(0, 'rgba(0,0,0,0.32)');
-  g1.addColorStop(1, 'rgba(0,0,0,0)');
-  ctx.fillStyle = g1;
-  ctx.fillRect(0, 0, width, height);
-
-  // bottom-left corner
-  const g2 = ctx.createRadialGradient(0, height, 0, 0, height, r);
-  g2.addColorStop(0, 'rgba(0,0,0,0.32)');
-  g2.addColorStop(1, 'rgba(0,0,0,0)');
-  ctx.fillStyle = g2;
-  ctx.fillRect(0, 0, width, height);
-}
-
 function draw() {
   ctx.clearRect(0, 0, width, height);
   drawBackgroundNet();
   drawNeuronEffect();
-  drawVignette();
   requestAnimationFrame(draw);
 }
 
