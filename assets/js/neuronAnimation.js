@@ -121,14 +121,20 @@ function drawNeuronEffect() {
 
 function drawVignette() {
   const panelW = width * 0.35;
-  const cx = panelW / 2;
-  const cy = height / 2;
-  const radius = Math.max(panelW, height) * 0.75;
-  const vignette = ctx.createRadialGradient(cx, cy, 0, cx, cy, radius);
-  vignette.addColorStop(0, 'rgba(0,0,0,0)');
-  vignette.addColorStop(0.7, 'rgba(0,0,0,0.04)');
-  vignette.addColorStop(1, 'rgba(0,0,0,0.18)');
-  ctx.fillStyle = vignette;
+  const r = panelW * 1.1;
+
+  // top-right corner
+  const g1 = ctx.createRadialGradient(panelW, 0, 0, panelW, 0, r);
+  g1.addColorStop(0, 'rgba(0,0,0,0.32)');
+  g1.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = g1;
+  ctx.fillRect(0, 0, width, height);
+
+  // bottom-left corner
+  const g2 = ctx.createRadialGradient(0, height, 0, 0, height, r);
+  g2.addColorStop(0, 'rgba(0,0,0,0.32)');
+  g2.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = g2;
   ctx.fillRect(0, 0, width, height);
 }
 

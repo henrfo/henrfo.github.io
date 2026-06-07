@@ -34,7 +34,10 @@
 	 width: 35%;
 	 height: 100vh;
 	 position: fixed;
-	 background: radial-gradient(ellipse at 50% 50%, #0c1825 0%, #070e18 60%, #050b12 100%);
+	 background:
+	   radial-gradient(ellipse at 100% 0%,   #020408 0%, transparent 55%),
+	   radial-gradient(ellipse at 0%   100%, #020408 0%, transparent 55%),
+	   #0a1520;
 	 color: white;
 	 text-align: center;
 	 display: flex;
