@@ -126,8 +126,8 @@ function drawVignette() {
   const radius = Math.max(panelW, height) * 0.75;
   const vignette = ctx.createRadialGradient(cx, cy, 0, cx, cy, radius);
   vignette.addColorStop(0, 'rgba(0,0,0,0)');
-  vignette.addColorStop(0.6, 'rgba(0,0,0,0.08)');
-  vignette.addColorStop(1, 'rgba(0,0,0,0.45)');
+  vignette.addColorStop(0.7, 'rgba(0,0,0,0.04)');
+  vignette.addColorStop(1, 'rgba(0,0,0,0.18)');
   ctx.fillStyle = vignette;
   ctx.fillRect(0, 0, width, height);
 }
