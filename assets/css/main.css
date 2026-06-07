@@ -398,8 +398,13 @@
 
 /* Section break (divider without heading) */
 .section-break {
-    margin: 2rem 0 1.5rem 0;
+    margin: 2.5rem 0 1.5rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Contact block — tighter paragraph spacing */
+.contact-info p {
+    margin-bottom: 0.4rem;
 }
 
 /* copyright */
