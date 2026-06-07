@@ -424,6 +424,13 @@
     padding-bottom: 0;
 }
 
+#tab-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 10rem);
+}
+
 #tab-cv h2 {
     margin-top: 2.4rem;
     margin-bottom: 0.55rem;
