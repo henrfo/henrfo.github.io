@@ -414,7 +414,7 @@
 }
 
 #tab-cv h2 {
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
     margin-bottom: 0.4rem;
     font-size: 0.72rem;
     font-weight: 500;
@@ -422,7 +422,9 @@
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
     border-bottom: none;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 0;
+    padding-left: 0.6rem;
 }
 
 .tab-btn {
@@ -458,6 +460,8 @@
 }
 
 .cv-list li {
+    display: flex;
+    gap: 1rem;
     padding: 0.18rem 0;
     color: rgba(255, 255, 255, 0.45);
     font-size: 0.9rem;
@@ -469,9 +473,11 @@
 }
 
 .cv-year {
-    color: rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+    width: 5.5rem;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.25);
     font-size: 0.82rem;
-    margin-right: 0.5rem;
     font-variant-numeric: tabular-nums;
 }
 
