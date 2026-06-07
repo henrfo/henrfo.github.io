@@ -345,7 +345,8 @@
 	}
 	
 	.social-links i {
-		font-size: 30px; /* Adjust size here */
+		font-size: 30px;
+		margin-right: 6px;
 	}
 	
 	.fa-graduation-cap,
