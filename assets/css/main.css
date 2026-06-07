@@ -335,6 +335,10 @@
 		font-size: 30px; /* Adjust size here */
 	}
 	
+	.fa-graduation-cap {
+		color: #4285F4;
+	}
+
 	.fa-orcid {
 		color: #A6CE39;
 	}
