@@ -391,6 +391,74 @@
 
 /* copyright */
 .copyright {
-    font-size: 12px; /* You can adjust this value to make it smaller or larger */
-    opacity: 0.7; /* Makes it slightly more subtle */
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   Panel tabs
+   ========================================================================== */
+.panel-tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0 0 0.75rem 0;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tab-btn.active {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================================
+   CV list styles
+   ========================================================================== */
+.cv-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.cv-list li {
+    padding: 0.45rem 0;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    line-height: 1.5;
+}
+
+.cv-list li::before {
+    display: none;
+}
+
+.cv-year {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.85rem;
+    margin-right: 0.6rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.cv-status {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin-right: 0.4rem;
 }

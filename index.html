@@ -10,67 +10,102 @@
 <body>
     <!-- Left Panel -->
     <div class="left-panel">
-        <!-- Canvas container for animation -->
         <div class="animation-container">
             <canvas id="bg"></canvas>
         </div>
-        
-        <!-- Content -->
         <div class="left-content">
             <img src="images/henrik.jpg" alt="Henrik Formoe" class="profile-image">
             <h1>Henrik Formoe</h1>
             <p>Cognitive Neuroscientist</p>
         </div>
-        
         <div class="copyright">© HF</div>
     </div>
 
     <!-- Right Panel -->
     <div class="right-panel">
-        <h2>About Me</h2>
-        <p>Researcher in cognitive neuroscience and machine learning, finishing a clinical psychology degree at the University of Oslo, and with a previous background in the Norwegian film industry.</p>
 
-        <p>I'm particularly interested in vision, perception, memory, and decision-making — in sum, how we experience and process the world around us — and the disruption of these processes by conditions like stroke, dementia, and various mental illnesses.</p>
+        <!-- Tabs -->
+        <div class="panel-tabs">
+            <button class="tab-btn active" onclick="showTab('home', this)">About</button>
+            <button class="tab-btn" onclick="showTab('cv', this)">CV</button>
+        </div>
 
-        <h2>Communication</h2>
-        <p>Feel free to reach out for collaborations or discussions!</p>
+        <!-- Home -->
+        <div id="tab-home" class="tab-content">
+            <h2>About Me</h2>
+            <p>Researcher in cognitive neuroscience and machine learning, finishing a clinical psychology degree at the University of Oslo, and with a previous background in the Norwegian film industry.</p>
+            <p>I'm particularly interested in vision, perception, memory, and decision-making — in sum, how we experience and process the world around us — and the disruption of these processes by conditions like stroke, dementia, and various mental illnesses.</p>
 
+            <h2>Communication</h2>
+            <p>Feel free to reach out for collaborations or discussions!</p>
+            <p>Location: Oslo, Norway</p>
+            <p>Email: <a href="mailto:henrfo@uio.no">henrfo@uio.no</a></p>
 
-        <p>Location: Oslo, Norway</p>
-        <p>Email: <a href="mailto:henrfo@uio.no">henrfo@uio.no</a></p>
-
-        
             <ul class="social-links">
-        <li>
-            <a href="https://scholar.google.com/citations?user=WAH17EkAAAAJ&hl=en&oi=ao" class="icon scholar">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Scholar</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://orcid.org/0009-0000-0909-5139" class="icon orcid">
-                <i class="fab fa-orcid"></i>
-                <span>ORCID</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/henrfo" class="icon github">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-            </a>
-        </li>
-        <li>
-            <a href="mailto:henrfo@uio.no" class="icon email">
-                <i class="fas fa-envelope"></i>
-                <span>Email</span>
-            </a>
-        </li>
-    </ul>
+                <li><a href="https://scholar.google.com/citations?user=WAH17EkAAAAJ&hl=en&oi=ao"><i class="fas fa-graduation-cap"></i><span>Scholar</span></a></li>
+                <li><a href="https://orcid.org/0009-0000-0909-5139"><i class="fab fa-orcid"></i><span>ORCID</span></a></li>
+                <li><a href="https://github.com/henrfo"><i class="fab fa-github"></i><span>GitHub</span></a></li>
+                <li><a href="mailto:henrfo@uio.no"><i class="fas fa-envelope"></i><span>Email</span></a></li>
+            </ul>
+        </div>
+
+        <!-- CV -->
+        <div id="tab-cv" class="tab-content" style="display:none">
+
+            <h2>Publications</h2>
+            <ul class="cv-list">
+                <li><span class="cv-status">Under Review</span> — Mihály, A., Fitzgerald, M., <strong>Formoe, H.</strong>, &amp; Haug, N. Comparing the Hopfield Network and Sparse Distributed Memory Model in Pattern Completion. <em>Simula SpringerBriefs on Computing.</em></li>
+                <li><span class="cv-status">Contributing Author</span> — Corrigenda for post-stroke cognitive training literature (<a href="https://doi.org/10.1002/hbm.25284">10.1002/hbm.25284</a>, <a href="https://doi.org/10.1002/hbm.70439">10.1002/hbm.70439</a>).</li>
+            </ul>
+
+            <h2>Research</h2>
+            <ul class="cv-list">
+                <li><span class="cv-year">2025–</span> Research Assistant · Oslo University Hospital Ullevål — BRAINMINT project (MRI, EEG, biological samples)</li>
+                <li><span class="cv-year">2025–</span> Multimodal Imaging Lab · UiO — Predictive models for neuroimaging. PI: Prof. Lars Westlye</li>
+                <li><span class="cv-year">2025–</span> Simula Research Laboratory — Neuroscience software &amp; quantum ML for neuroimaging. PI: Prof. Shaukat Ali</li>
+                <li><span class="cv-year">2025–</span> Cognitive Neurophysiology Group · UiO — sEEG, memory encoding. PI: Dr. Jørgen Sugar</li>
+            </ul>
+
+            <h2>Education</h2>
+            <ul class="cv-list">
+                <li><span class="cv-year">2022–2027</span> Cand.Psychol. (Clinical Psychology) · University of Oslo</li>
+                <li><span class="cv-year">2025–2027</span> B.Sc. Informatics · University of Oslo</li>
+                <li><span class="cv-year">2025</span> B.Sc. Cognitive Psychology · University of Oslo</li>
+                <li><span class="cv-year">2023–2024</span> Exchange · UCSD · University of Melbourne · Akita International University</li>
+                <li><span class="cv-year">2015–2023</span> Art History &amp; Visual Studies · University of Oslo</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <ul class="cv-list">
+                <li><span class="cv-year">2025</span> Summer Research Fellow · UiO:Life Science — sEEG &amp; visual memory encoding. <em>Student Project Poster Prize 2025</em></li>
+                <li><span class="cv-year">2024</span> Visual Representation Analysis in CLIP Latent Space · UCSD — Supervisor: Prof. Virginia de Sa</li>
+            </ul>
+
+            <h2>Science Outreach</h2>
+            <ul class="cv-list">
+                <li><span class="cv-year">2025</span> Science Stand · Technical Museum Oslo — "How does our memory work?"</li>
+                <li><span class="cv-year">2025</span> Poster · UiO:Life Science Conference — "Theta signatures of memorable vs forgettable images"</li>
+                <li><span class="cv-year">2025</span> Talk · SAP Next-Gen — Cognition, perception and memory</li>
+                <li><span class="cv-year">2025</span> Advisor's Day · University of Oslo — "How can we get more men to study clinical psychology?"</li>
+            </ul>
+
+            <h2>Other</h2>
+            <ul class="cv-list">
+                <li><span class="cv-year">2015–</span> Freelance Film Production — Technical and creative roles in the Norwegian film industry; underwater filming, water tech &amp; safety diver. <a href="https://www.imdb.com/name/nm8393187/">IMDb</a></li>
+                <li><span class="cv-year">2022–2023</span> Chair, Program Committee for Psychology · University of Oslo</li>
+            </ul>
+
+        </div>
     </div>
 
-
-
-    <!-- Scripts -->
     <script src="assets/js/neuronAnimation.js"></script>
+    <script>
+        function showTab(tab, btn) {
+            document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('tab-' + tab).style.display = 'block';
+            btn.classList.add('active');
+        }
+    </script>
 </body>
 </html>
