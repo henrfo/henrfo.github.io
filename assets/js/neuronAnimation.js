@@ -119,10 +119,24 @@ function drawNeuronEffect() {
   }
 }
 
+function drawVignette() {
+  const panelW = width * 0.35;
+  const cx = panelW / 2;
+  const cy = height / 2;
+  const radius = Math.max(panelW, height) * 0.75;
+  const vignette = ctx.createRadialGradient(cx, cy, 0, cx, cy, radius);
+  vignette.addColorStop(0, 'rgba(0,0,0,0)');
+  vignette.addColorStop(0.6, 'rgba(0,0,0,0.08)');
+  vignette.addColorStop(1, 'rgba(0,0,0,0.45)');
+  ctx.fillStyle = vignette;
+  ctx.fillRect(0, 0, width, height);
+}
+
 function draw() {
   ctx.clearRect(0, 0, width, height);
   drawBackgroundNet();
   drawNeuronEffect();
+  drawVignette();
   requestAnimationFrame(draw);
 }
 
