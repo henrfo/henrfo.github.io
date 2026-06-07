@@ -91,8 +91,8 @@
 	 width: 65%;
 	 min-height: 100vh;
 	 margin-left: 35%;
-	 background-color: #2b2f36;
-	 color: #d4d4d4;
+	 background-color: #1c2028;
+	 color: #c8c8c8;
 	 padding: 4rem 5rem;
    }
    
@@ -112,7 +112,7 @@
    
    h2 {
 	 font-size: 1.5rem;
-	 color: #e8e8e8;
+	 color: #ffffff;
 	 margin-top: 2.5rem;
 	 padding-bottom: 0.5rem;
 	 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -135,7 +135,7 @@
    /* Right panel paragraphs */
    .right-panel p {
 	 margin-bottom: 1.5rem;
-	 color: #aaa;
+	 color: #b0b0b0;
 	 max-width: 650px;
    }
    
@@ -155,7 +155,7 @@
 	  Links & Buttons
 	  ========================================================================== */
    a {
-	 color: #aaa;
+	 color: #b0b0b0;
 	 text-decoration: none;
 	 transition: color 0.2s ease-in-out;
    }
@@ -342,20 +342,11 @@
 		font-size: 30px; /* Adjust size here */
 	}
 	
-	.fa-graduation-cap {
-		color: #4285F4;
-	}
-
-	.fa-orcid {
-		color: #A6CE39;
-	}
-	
-	.fa-github {
-		color: #333;
-	}
-	
+	.fa-graduation-cap,
+	.fa-orcid,
+	.fa-github,
 	.fa-envelope {
-		color: #D44638;
+		color: rgba(255, 255, 255, 0.75);
 	}
 
 /* Remove all list styling */
