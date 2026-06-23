@@ -432,6 +432,10 @@
     max-width: 620px;
 }
 
+#tab-home p {
+    margin-bottom: 0.6rem;
+}
+
 #tab-cv h2 {
     margin-top: 2.4rem;
     margin-bottom: 0.55rem;
