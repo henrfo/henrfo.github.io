@@ -504,6 +504,12 @@
     font-variant-numeric: tabular-nums;
 }
 
+.cv-thesis {
+    display: block;
+    margin-top: 0.3rem;
+    padding-left: 0;
+}
+
 .cv-status {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.85rem;
