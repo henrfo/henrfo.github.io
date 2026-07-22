@@ -504,10 +504,15 @@
     font-variant-numeric: tabular-nums;
 }
 
+.cv-entry {
+    display: flex;
+    flex-direction: column;
+}
+
 .cv-thesis {
-    display: block;
     margin-top: 0.3rem;
-    padding-left: 0;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.82rem;
 }
 
 .cv-status {
