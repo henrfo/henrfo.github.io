@@ -506,7 +506,7 @@
 
 .cv-year:empty::before {
     content: '·';
-    color: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .cv-entry {
