@@ -508,9 +508,13 @@
     font-variant-numeric: tabular-nums;
 }
 
-.cv-year::after {
-    content: ' ·';
+.cv-year:empty::before {
+    content: '·';
     color: rgba(255, 255, 255, 0.35);
+}
+
+.cv-desc {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .cv-entry {
