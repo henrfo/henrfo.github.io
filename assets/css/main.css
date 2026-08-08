@@ -504,6 +504,11 @@
     font-variant-numeric: tabular-nums;
 }
 
+.cv-year:empty::before {
+    content: '·';
+    color: rgba(255, 255, 255, 0.18);
+}
+
 .cv-entry {
     display: flex;
     flex-direction: column;
