@@ -436,15 +436,22 @@
 }
 
 #tab-home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: calc(100vh - 10rem);
-    max-width: 620px;
+    max-width: 560px;
+    padding-top: 2rem;
 }
 
 #tab-home p {
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.65;
+}
+
+#tab-home .section-break {
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+#tab-home .social-links {
+    margin-top: 1.4rem;
 }
 
 #tab-cv {
