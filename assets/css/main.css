@@ -438,6 +438,7 @@
 #tab-home {
     max-width: 560px;
     padding-top: 2rem;
+    padding-inline: 2rem;
 }
 
 #tab-home p {
