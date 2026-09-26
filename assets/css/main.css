@@ -302,6 +302,16 @@
 	 .cv-year {
 	   font-size: 0.65rem;
 	 }
+
+	 .cv-desc {
+	   display: block;
+	   margin-left: 0;
+	   margin-top: 0.1rem;
+	 }
+
+	 .cv-desc + .cv-desc::before {
+	   content: none;
+	 }
    }
 
    /* Extra small devices (small phones) */
@@ -492,7 +502,7 @@
     margin: 0 0 0.2rem 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .cv-list li {
@@ -501,12 +511,8 @@
     column-gap: 0.75rem;
     color: rgba(255, 255, 255, 0.82);
     font-size: 0.88rem;
-    line-height: 1.3;
+    line-height: 1.35;
     font-weight: 400;
-}
-
-.cv-list li:not(:first-child):has(.cv-year:not(:empty)) {
-    margin-top: 1rem;
 }
 
 .cv-list li::before {
@@ -523,11 +529,7 @@
 }
 
 .cv-entry {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    border-left: 1.5px solid rgba(255, 255, 255, 0.09);
-    padding-left: 0.65rem;
+    display: block;
 }
 
 .cv-entry a {
@@ -535,17 +537,26 @@
 }
 
 .cv-desc {
+    display: inline;
+    margin-left: 0.4em;
     color: rgba(255, 255, 255, 0.33);
     font-size: 0.83rem;
     font-weight: 300;
 }
 
+.cv-desc + .cv-desc::before {
+    content: '\00a0·\00a0';
+    color: rgba(255, 255, 255, 0.2);
+}
+
 .cv-desc strong {
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.58);
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .cv-thesis {
+    display: block;
+    margin-top: 0.2rem;
     color: rgba(255, 255, 255, 0.35);
     font-size: 0.82rem;
 }
