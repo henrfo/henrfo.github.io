@@ -510,6 +510,10 @@
     display: none;
 }
 
+.cv-list li:not(:first-child):has(.cv-year:not(:empty)) {
+    margin-top: 1rem;
+}
+
 .cv-year {
     text-align: right;
     color: rgba(255, 255, 255, 0.25);
