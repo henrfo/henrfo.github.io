@@ -574,6 +574,11 @@
     font-weight: 300;
 }
 
+.cv-role {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+}
+
 .cv-desc-block {
     display: block;
     margin-left: 0;
