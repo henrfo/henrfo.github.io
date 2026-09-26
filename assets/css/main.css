@@ -561,6 +561,29 @@
     font-size: 0.82rem;
 }
 
+.cv-entry-minor {
+    color: rgba(255, 255, 255, 0.38);
+    font-weight: 300;
+}
+
+.cv-desc-block {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.15rem;
+    color: rgba(255, 255, 255, 0.33);
+    font-size: 0.83rem;
+    font-weight: 300;
+}
+
+.cv-desc-block + .cv-desc-block::before {
+    content: none;
+}
+
+.cv-desc-block strong {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+}
+
 .cv-status {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.85rem;
