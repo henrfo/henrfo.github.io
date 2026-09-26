@@ -447,6 +447,10 @@
     margin-bottom: 0.6rem;
 }
 
+#tab-cv {
+    max-width: 90ch;
+}
+
 #tab-cv h2 {
     margin-top: 2.4rem;
     margin-bottom: 0.55rem;
@@ -525,6 +529,20 @@
 
 .cv-entry {
     display: block;
+    position: relative;
+}
+
+.cv-entry::before {
+    content: "•";
+    position: absolute;
+    left: -0.9rem;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.7rem;
+    line-height: 1.6;
+}
+
+.cv-entry-minor::before {
+    display: none;
 }
 
 .cv-entry a {
